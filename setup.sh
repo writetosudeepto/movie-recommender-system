@@ -1,9 +1,11 @@
 mkdir -p ~/.streamlit/
-# shellcheck disable=SC2028
+echo "\
+[general]\n\
+email = \"writetosudeepto@gmail.com\"\n\
+" > ~/.streamlit/credentials.toml
 echo "\
 [server]\n\
 headless = true\n\
+enableCORS=false\n\
 port = $PORT\n\
-enableCORS = false\n\
-\n\
 " > ~/.streamlit/config.toml
